@@ -24,6 +24,11 @@ p.headline-text {
   border-radius: 0;
 }
 
+.logo {
+  position: relative;
+  top: 4px;
+}
+
 /*----------------------------
 02. Typography
 ----------------------------*/
@@ -153,7 +158,7 @@ p.headline-text {
     text-align: center;
     position: relative;
     width: 100%;
-    height: 93vh;
+    height: 100vh;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -174,7 +179,7 @@ p.headline-text {
 
   #home h1{
     position: relative;
-    top: 8%;
+    top: 14%;
     margin: 0;
     padding: 0;
     color: #000;
@@ -191,7 +196,7 @@ p.headline-text {
 
   #home h2{
     position: relative;
-    top: 8%;
+    top: 14%;
     margin: 0;
     padding: 0;
     color: #fff;
@@ -220,7 +225,7 @@ p.headline-text {
   }
 
   #home h3 {
-    color: #529CE4;
+    color: #E45252;
     font: bold 1.1em/1.1 'Montserrat', sans-serif;
     margin: 0.7em;
   }
@@ -232,9 +237,9 @@ p.headline-text {
 
   #home .email-sign-up {
     position: relative;
-    top: 8%;
+    top: 16%;
     background: #fff;
-    padding: 2em;
+    padding: 1.98em;
     border-radius: 1em;
   }
 
@@ -251,7 +256,7 @@ p.headline-text {
     padding: 1.45em;
     border: 2px solid #ed4545;
     color: #fff;
-    z-index: 1000;
+    z-index: 5;
   }
 
   #home .email-sign-up button:hover {
@@ -318,7 +323,7 @@ p.headline-text {
   /*----------------------------
   07. 7 DAY RAILS
   ----------------------------*/
-  #sevendayrails {
+  #bootcamp {
     background: #fff;
     padding-top: 110px;
     padding-bottom: 80px;
@@ -329,7 +334,9 @@ p.headline-text {
   }
 
 
-   form.sevenday-enroll input[type=text] {
+   form.bootcamp-enroll input[type=text],
+   form.bootcamp-enroll input[type=email]
+   {
     border: 2px solid #D1D1D1;
     box-shadow: none;
     clear: both;
@@ -346,8 +353,35 @@ p.headline-text {
   }
 
 
+ 
+form.bootcamp-enroll input[type=submit]
+{
+  background: #F16059;
+  border: 2px solid #CA1D14;
+  color: #FFFFFF;
+  float: right;
+  font-family: 'montserrat';
+  font-size: 15px;
+  font-weight: normal;
+  margin: 30px 52px 0 20px;
+  padding: 16px 60px;
+  text-transform: uppercase;
+  width: 100%;
+  margin: 0 auto -25px;
+  font-size: 18px;
+  }
 
+  ul.technology>li {
+    margin: 0;
+    padding: 0 25px 0 0;
+    list-style: none;
+    float: left;
+  }
 
+  ul.technology {
+    margin: 20px 0;
+    padding: 0;
+  }
   /*----------------------------
   08. REVIEWS
   ----------------------------*/
