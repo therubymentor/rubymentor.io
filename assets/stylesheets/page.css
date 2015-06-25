@@ -1,0 +1,25 @@
+/***************************************
+ * Quform Page Stylesheet
+ *
+ * by ThemeCatcher
+ * http://www.themecatcher.net
+ ***************************************/
+
+code, kbd, samp, pre, tt, var,
+input, select, isindex, listing, xmp, plaintext {
+	white-space: normal;
+	font-size: 1em;
+	font: inherit;
+}
+textarea {
+	font-size: 1em;
+    font: inherit;
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+.template-outside {
+    margin: 20px;
+}

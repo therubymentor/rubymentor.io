@@ -1,0 +1,404 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+hr {
+  border-top: 1px solid #dcdcdc;
+}
+
+form {
+  border: 0;
+  background-color: none
+}
+
+p.headline-text {
+  font: 400 2.2em 'Open Sans', sans-serif;
+  margin: 1.2em 0;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+/*----------------------------
+02. Typography
+----------------------------*/
+  body {
+    font: 600 22.5px/33.5px 'open sans', sans-serif;
+  }
+
+  h1 {
+    font: bold 3.0em/1.1 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font: 400 2.4em 'Montserrat', sans-serif;
+    margin: 1.2em;
+    text-shadow: none;
+  }
+
+  h3 {
+    font: 400 2.1em 'Montserrat', sans-serif;
+    margin: 0.9em;
+    text-shadow: none;
+  }
+
+  h4 {
+    font: 400 1.6em 'Montserrat', sans-serif;
+    margin: 0.8em;
+    text-shadow: none;
+  }
+
+  p {
+
+    font: 1em/1.425em 'Open Sans', helvetica, arial, sans-serif;
+    margin-bottom: 20px;
+  }
+
+  blockquote {
+    border-left: 4px solid #d7dada;
+    color: #3b3b3b;
+    font-style: italic;
+    font-size: 1.1875em;
+    margin-bottom: 1.25em;
+    padding-left: 1.25em;
+  }
+
+  /*----------------------------
+  03. Buttons
+  -----------------------------*/
+  .btn a {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  .btn {
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .btn-style-1 {
+      border-radius: 0;
+      box-shadow: none;
+      color: #FFFFFF;
+      display: block;
+      font-size: 16px;
+      height: 54px;
+      margin-right: 10px;
+      padding: 14px 44px 14px 26px;
+      text-transform: uppercase;
+      width: 446px;
+      background: #ed4545;
+      border: 2px solid #ed4545;
+  }
+
+  .btn-style-1:hover {
+    border: 2px solid #ed4545;
+    background: #ef0a0a;
+  }
+
+  .btn-style-2:hover {
+    background: #444;
+    border-color: #fff;
+    color: #fff;
+    border: 1px solid #fff;
+  }
+
+  .btn-style-2 {
+    border-color: #444;
+    background: #fff;
+    color: #444;
+  }
+
+  /*----------------------------
+  04. Separators
+  ----------------------------*/
+  #separator-1, #separator-2, #separator-3, #separator-4 {
+    text-align: center;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    background-size: cover;
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    height: 400px;
+  }
+
+  #separator-1 {
+    background: url(../images/sections/laptop_keyboard.jpg) 50% 0 repeat fixed;
+    background-size: 100%;
+  }
+
+  #separator-2 {
+    background: url(../images/sections/programmer_laptop.jpg) 50% 0 repeat fixed;
+    background-size: 100%;
+  }
+
+  /*----------------------------
+  05. HOME
+  ----------------------------*/
+  #home {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 93vh;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  #home:before {
+    background: url(../images/top_bg.jpg) 50% 60% fixed;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .5;
+    z-index: 0;
+  }
+
+  #home h1{
+    position: relative;
+    top: 8%;
+    margin: 0;
+    padding: 0;
+    padding-left: 14%;
+    color: #000;
+    text-align: left;
+    width: 100%;
+    background: #fff;
+    -khtml-opacity:0.9; 
+    -moz-opacity:0.90; 
+    -ms-filter:”alpha(opacity=90)”;
+    filter:alpha(opacity=90);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.9);
+    opacity:0.9; 
+  }
+
+  #home h2{
+    position: relative;
+    top: 8%;
+    margin: 0;
+    padding: 0;
+    padding-right: 14%;
+    color: #fff;
+    text-align: right;
+    width: 100%;
+    background: #53bcf4;
+    -khtml-opacity:0.9; 
+    -moz-opacity:0.90; 
+    -ms-filter:”alpha(opacity=90)”;
+    filter:alpha(opacity=90);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.9);
+    opacity:0.9; 
+    margin-bottom: 1em;
+  }
+
+  #home h1 {
+    font: bold 1.7em/1.1 'Montserrat', sans-serif;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+  }
+
+  #home h2 {
+    font: bold 1.5em/1.1 'Montserrat', sans-serif;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+  }
+
+  #home h3 {
+    color: #529CE4;
+    font: bold 1.1em/1.1 'Montserrat', sans-serif;
+    margin: 0.7em;
+  }
+
+  #home h4 {
+    font: bold 0.9em/1.1 'Montserrat', sans-serif;
+    margin: 0.7em;
+  }
+
+  #home .email-sign-up {
+    position: relative;
+    top: 8%;
+    background: #fff;
+    padding: 2em;
+    border-radius: 1em;
+  }
+
+  #home .email-sign-up input {
+    background: #fff;
+    color: #323232;
+    padding: 2em;
+    border: 2px solid #ed4545;
+    margin: 1em;
+  }
+
+  #home .email-sign-up button {
+    background: #ed4545;
+    padding: 1.45em;
+    border: 2px solid #ed4545;
+    color: #fff;
+  }
+
+  #home .email-sign-up button:hover {
+    background: #ef0a0a;
+  }
+
+  /*----------------------------
+  06. Nav
+  ----------------------------*/
+  nav.navbar {
+    background: #04a2f1;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    border-radius: 0;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+  }
+
+  #nav {
+    z-index: 1000;
+    width: 100%;
+  }
+
+  .navbar {
+    border: none;
+  }
+
+  .navbar-nav {
+    display: inline-block;
+    float: none;
+  }
+
+  a.navbar-brand {
+    font-size: 26px;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  a.navbar-brand img {
+    margin-top: -16px;
+  }
+
+  .nav > li > a {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: background 0.3s;
+    -webkit-transtion: background 0.3s;
+  }
+
+  .nav li {
+    margin-right: 0px;
+    margin-left: 24px;
+  }
+
+  .nav > li > a:hover, .nav > li > a:focus {
+    background: #00549b;
+  }
+
+
+  /*----------------------------
+  07. 7 DAY RAILS
+  ----------------------------*/
+  #sevendayrails {
+    background: #fff;
+    padding-top: 110px;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 10;
+    -webkit-box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.3);
+  }
+
+
+   form.sevenday-enroll input[type=text] {
+    border: 2px solid #D1D1D1;
+    box-shadow: none;
+    clear: both;
+    display: block;
+    padding: 10px 20px;
+    height: 65px;
+    max-width: 100% !important;
+    min-width: 260px !important;
+    width: 100%;
+    float: none;
+    background: #fff;
+    font: 18px/43px 'open sans', sans-serif;
+    margin-bottom: 0.4em;
+  }
+
+
+
+
+  /*----------------------------
+  08. REVIEWS
+  ----------------------------*/
+  #reviews {
+    background: #fff;
+    position: relative;
+    z-index: 10;
+    -webkit-box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  /*----------------------------
+  08. ABOUT
+  ----------------------------*/
+  #about {
+    background: #fff;
+    padding: 110px 0;
+    position: relative;
+    z-index: 10;
+    -webkit-box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  /*----------------------------
+  14. Media queries
+  -----------------------------*/
+  /* Large Devices, Wide Screens */
+  @media only screen and (max-width: 1024px) {
+  }
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width: 992px) {
+  }
+  /* Small Devices, Tablets */
+  @media only screen and (max-width: 768px) {
+  }
+  @media only screen and (max-width: 660px) {
+    #separator-1, #separator-2, #separator-3, #separator-4 {
+      height: 300px;
+    }
+  }
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width: 480px) {
+    #separator-1, #separator-2, #separator-3, #separator-4 {
+      height: 250px;
+      background-size: auto;
+    }
+  }
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width: 320px) {
+    #separator-1, #separator-2, #separator-3, #separator-4 {
+      background-size: auto;
+    }
+  }
