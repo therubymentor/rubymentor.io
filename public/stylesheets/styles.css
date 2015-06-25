@@ -177,9 +177,8 @@ p.headline-text {
     top: 8%;
     margin: 0;
     padding: 0;
-    padding-left: 14%;
     color: #000;
-    text-align: left;
+    text-align: center;
     width: 100%;
     background: #fff;
     -khtml-opacity:0.9; 
@@ -195,9 +194,8 @@ p.headline-text {
     top: 8%;
     margin: 0;
     padding: 0;
-    padding-right: 14%;
     color: #fff;
-    text-align: right;
+    text-align: center;
     width: 100%;
     background: #53bcf4;
     -khtml-opacity:0.9; 
@@ -253,6 +251,7 @@ p.headline-text {
     padding: 1.45em;
     border: 2px solid #ed4545;
     color: #fff;
+    z-index: 1000;
   }
 
   #home .email-sign-up button:hover {
