@@ -325,7 +325,9 @@ p.headline-text {
     margin-left: 24px;
   }
 
-  .nav > li > a:hover, .nav > li > a:focus {
+  .nav > li.current a,
+  .nav > li > a:hover,
+  .nav > li > a:focus {
     background: #00549b;
   }
 
