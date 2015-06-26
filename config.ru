@@ -2,6 +2,7 @@ require 'rubygems'
 require 'bundler/setup'
 require 'rack'
 require 'rack/router'
+require 'erb'
 require 'stripe'
 
 if ENV["RACK_ENV"] == "development"
@@ -11,7 +12,8 @@ if ENV["RACK_ENV"] == "development"
   Dotenv.load
 end
 
-Stripe.api_key = ENV.fetch("STRIPE_KEY")
+Stripe.api_key = ENV.fetch("STRIPE_SECRET_KEY")
+STRIPE_PUB_KEY = ENV.fetch("STRIPE_PUBLISHED_KEY")
 
 use Rack::Static,
   :urls => ["/images", "/javascripts", "/stylesheets"],
@@ -24,6 +26,11 @@ charge_customer = ->(env) {
     source: params['stripeToken'],
     plan: params['plan']
   )
+}
+
+render = ->(template) {
+  path = File.expand_path("../#{template}", __FILE__)
+  ERB.new(File.read(path)).result(binding)
 }
 
 index = ->(env) {
@@ -44,7 +51,7 @@ plans = ->(env) {
       'Content-Type'  => 'text/html',
       'Cache-Control' => 'public, max-age=86400'
     },
-    File.open('public/plans.html', File::RDONLY)
+    [ render.("public/plans.html.erb") ]
   ]
 }
 
