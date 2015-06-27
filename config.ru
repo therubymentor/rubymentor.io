@@ -16,7 +16,7 @@ Stripe.api_key = ENV.fetch("STRIPE_SECRET_KEY")
 STRIPE_PUB_KEY = ENV.fetch("STRIPE_PUBLISHED_KEY")
 
 use Rack::Static,
-  :urls => ["/images", "/javascripts", "/stylesheets"],
+  :urls => ["/favicon.ico", "/images", "/javascripts", "/stylesheets"],
   :root => "public"
 
 charge_customer = ->(env) {
