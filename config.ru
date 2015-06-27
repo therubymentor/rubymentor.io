@@ -55,6 +55,17 @@ plans = ->(env) {
   ]
 }
 
+students = ->(env) {
+  [
+    200,
+    {
+      'Content-Type'  => 'text/html',
+      'Cache-Control' => 'public, max-age=86400'
+    },
+    [ render.("public/students.html.erb") ]
+  ]
+}
+
 buy = ->(env) {
   charge_customer.(env)
   [
@@ -70,6 +81,7 @@ buy = ->(env) {
 router = Rack::Router.new do
   get "/" => index
   get "/plans" => plans
+  get "/students" => students
   post "/buy" => buy
 end
 
