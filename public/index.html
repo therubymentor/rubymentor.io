@@ -148,7 +148,7 @@
         <div id="separator-1">
           <div class="row">
             <h3>I teach the following technology stack</h3>
-            <div class="col-md-8 col-md-offset-2 text-center">
+            <div class="col-md-8 col-md-offset-2">
             <div class="well well-lg">
               <ul class="technologies list-inline">
                 <li><a href="http://www.w3schools.com/html"><img alt="HTML5" height="150" src="/images/technologies/html5-sm.png"></a></li>
@@ -219,25 +219,100 @@
           <div class="container">
             <div class="row">
               <div class="col-md-12">
-                <h2><span class="headline-lines">Reviews</span></h2>
+                <h2 class="review-section-header">Reviews</h2>
               </div> <!-- end col-md-12 -->
             </div> <!-- end row -->
+          </div>
 
+          <hr class="review-section-header-underline">
+
+          <div class="container"> 
             <div class="row">
-              <div class="col-md-2">
-              </div> <!-- end col-md-6 -->
-
-              <div class="col-md-8 col-sm-8 col-sm-8">
-                <p class="headline-text"></p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+              <div class="col-md-12">
+                <img src="/images/reviewers/eric.jpg" class="review-image-lg" align="right">
+                <div class="review-name-lg">Eric Douglas</div>
+                <p class="review-text">Coming from a business background, I found programming intriguing but sometimes very confusing. Jim excelled at simplifying everything I threw his way and not "Nerding out" on me.</p>
+                <p class="review-text">He has a very personal style of teaching that includes pair programming and an audio channel. I would definitely recommend his mentorship!</p>
               </div> <!-- end col-md-6 -->
             </div> <!-- end row -->
+          </div>
 
+          <hr class="review-section-header-underline">
+
+          <div class="container"> 
+            <div class="row">
+              <div class="col-md-12">
+                <img src="/images/reviewers/holden.jpg" class="review-image-lg" align="left">
+                <div class="review-name-lg">Holden Steinberg</div>
+                <p class="review-text">Jim is a great mentor. He does a great job of quickly identifying issues, and suggests corrections using Ruby / Rails best practices. I have worked with him for almost a year now and I definitely own the job I have now to him.</p>
+                <p class="review-text">He not only helped me learn the skills I would need day to day, he also helped me prepare for the interview! I highly recommend him and his mentorship.</p>
+              </div> <!-- end col-md-6 -->
+            </div> <!-- end row -->
           </div> <!-- end container -->
+          <hr class="review-section-header-underline">
+          <div class="container masonry">
+            <div class="review-callout">
+              <div class="arrow_box">
+                Did a great job of guiding me through the process, we covered solid ground!
+              </div>
+              <div class="review-callout-name">Todor</div>
+            </div>
+            <div class="review-callout">
+              <div class="arrow_box">
+                Jim was very helpful! We could walk through the problem and find the best solution reducing the impact on my current code!
+              </div>
+              <div class="review-callout-name">João Daniel</div>
+            </div>
+            <div class="review-callout">
+              <div class="arrow_box">
+                Jim was very quick and knowledgeable he offered good advice on how to structure my code!
+              </div>
+              <div class="review-callout-name">Stefano Schiavi</div>
+            </div>
+            <div class="review-callout">
+              <div class="arrow_box">
+                Did a great job of guiding me through the process, we covered solid ground!
+              </div>
+              <div class="review-callout-name">Adam Smith</div>
+            </div>
+            <div class="review-callout">
+              <div class="arrow_box">
+                Will working with Jim again. He helped me create Rails API.
+              </div>
+              <div class="review-callout-name">Suresh Kumar R</div>
+            </div>
+            <div class="review-callout">
+              <div class="arrow_box">
+                Amazing work. He helped me solve a linux problem that had been plaguing me for weeks! Top notch mentor.
+              </div>
+              <div class="review-callout-name">Spencer Ryan</div>
+            </div>
+            <div class="review-callout">
+              <div class="arrow_box">
+                Excellent advice from Jim! very detailed explanation of how to resolve my issue!
+              </div>
+              <div class="review-callout-name">Neil Patel</div>
+            </div>
+            <div class="review-callout">
+              <div class="arrow_box">
+                Great mentor. Very helpful and a Rails guru. Awesome and thoughtful help with my rails project! THANKS!
+              </div>
+              <div class="review-callout-name">Mattag</div>
+            </div>
+            <div class="review-callout">
+              <div class="arrow_box">
+                He really knows his stuff. He gives quality explanations, handles your problems efficiently and is aware of the time your paying for. I strongly recommend him as a mentor.
+              </div>
+              <div class="review-callout-name">Warren Kushner</div>
+            </div>
+            <div class="review-callout">
+              <div class="arrow_box">
+              Cares greatly about the topic, and teaching/learning.  Jim is an excellent mentor, and is quick at identifying the problem(s), and recommending effective solutions.
+              </div>
+              <div class="review-callout-name">Ralph Johnson</div>
+            </div>
+          </div>
+          </div>
         </div> <!-- end reviews -->
         </div> <!-- end animsition -->
 
@@ -336,6 +411,14 @@ $(".js_fixedcontent").fixedcontent({
   ga('create', 'UA-64462850-3', 'auto');
   ga('send', 'pageview');
 
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js"></script>
+<script>
+$('.masonry').masonry({
+  columnWidth: '.review-callout',
+    itemSelector: '.review-callout'
+});
 </script>
 
   </body>

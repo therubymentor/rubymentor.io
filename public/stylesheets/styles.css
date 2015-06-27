@@ -1,14 +1,12 @@
 html, body {
   height: 100%;
+  color; #282424;
 }
 
 body {
   min-height: 100%;
 }
 
-hr {
-  border-top: 1px solid #dcdcdc;
-}
 
 form {
   border: 0;
@@ -19,6 +17,40 @@ p.headline-text {
   font: 400 2.2em 'Open Sans', sans-serif;
   margin: 1.2em 0;
 }
+
+h2.review-section-header {
+  color: #282424;
+  font: 400 5em 'Montserrat', sans-serif;
+  margin: 1.2em 0 -0.45em 0;
+  text-align: right;
+}
+
+hr.review-section-header-underline {
+  position: relative;
+  color; #282424;
+  background-color: #282424;
+  height: 2em !important;
+  width: 100%;
+  border: none;
+  z-index: 10;
+}
+
+.review-name-lg {
+  font-family: 'Droid Serif', serif;
+  font-size: 2.5em;
+  margin-bottom: 0.8em;
+  margin-top: 1em;
+}
+
+.review-text {
+  font: 100 1em 'Open Sans', sans-serif;
+  margin: 1.2em 0;
+}
+
+.review-image-lg {
+  margin: -1em 1em -1em 1em;
+}
+
 
 .form-control {
   border-radius: 0;
@@ -187,7 +219,7 @@ blockquote {
   top: 14%;
   margin: 0;
   padding: 0;
-  color: #000;
+  color: #282424;
   text-align: center;
   width: 100%;
   background: #fff;
@@ -442,4 +474,45 @@ form.bootcamp-enroll input[type=submit]
   margin: 0.7em;
 }
 
+.arrow_box {
+  position: relative;
+  background: #ffffff;
+  border: 2px solid #2bc7ff;
+  padding: 1.8em;
+}
+.arrow_box:after, .arrow_box:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
 
+.arrow_box:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #ffffff;
+  border-width: 30px;
+  margin-left: -30px;
+}
+.arrow_box:before {
+  border-color: rgba(43, 199, 255, 0);
+  border-top-color: #2bc7ff;
+  border-width: 33px;
+  margin-left: -33px;
+}
+
+.review-callout {
+  position: relative;
+  float: left;
+  width: 30%;
+  margin: 0.5em;
+margin-bottom: 2em;
+  text-align: center;
+}
+
+.review-callout-name {
+  margin-top: 1.4em;
+}
