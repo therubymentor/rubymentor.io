@@ -8,226 +8,10 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="/javascripts/jquery-1.11.1.min.js"></script>
   <title>Custom Bootcamp Monthly Plans</title>
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css"></link>
+  <link rel="stylesheet" href="/stylesheets/top_nav.css"></link>
+  <link rel="stylesheet" href="/stylesheets/plans.css"></link>
 
-
-
-  <style>
-/*
-   Inspired by the dribble shot http://dribbble.com/shots/1285240-Freebie-Flat-Pricing-Table?list=tags&tag=pricing_table
- */
-
-/*--------- Font ------------*/
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
-/* fontawesome */
-[class*="fontawesome-"]:before {
-  font-family: 'FontAwesome', sans-serif;
-}
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/*------ utiltity classes -----*/
-.fl{ float:left; }
-.fr{ float: right; }
-/*its also known as clearfix*/
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-} 
-.group:after {
-  clear: both;
-}
-.group {
-  zoom: 1;  /*For IE 6/7 (trigger hasLayout) */
-}
-
-body {
-  background: #F2F2F2;
-  font-family: 'Droid Sans', sans-serif;
-  line-height: 1;
-  font-size: 16px;    
-}
-.pricing-table {
-  width: 80%;
-  margin: 50px auto;
-  text-align: center;
-  padding: 10px;
-  padding-right: 0;
-}
-.pricing-table .heading{
-  color: #9C9E9F;
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  margin-bottom: 4rem;
-}
-.block{
-  width: 30%;    
-  margin: 0 15px;
-  overflow: hidden;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;    
-  /*    border: 1px solid red;*/
-}
-/*Shared properties*/
-.title,.pt-footer{
-  color: #FEFEFE;
-  text-transform: capitalize;
-  line-height: 2.5;
-  position: relative;
-}
-.content{
-  position: relative;
-  color: #FEFEFE;
-  padding: 20px 0 10px 0;
-}
-/*arrow creation*/
-.content:after, .content:before,.pt-footer:before,.pt-footer:after {
-  top: 100%;
-  left: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-.pt-footer:after,.pt-footer:before{
-  top:0;
-}
-.content:after,.pt-footer:after {
-  border-color: rgba(136, 183, 213, 0); 
-  border-width: 5px;
-  margin-left: -5px;
-}
-/*/arrow creation*/
-.price{
-  position: relative;
-  display: inline-block;
-  margin-bottom: 0.625rem;
-}
-.price span{    
-  font-size: 6rem;
-  letter-spacing: 8px;
-  font-weight: bold;        
-}
-.price sup{
-  font-size: 1.5rem;    
-  position: absolute;    
-  top: 12px;
-  left: -12px;
-}
-.hint{
-  font-style: italic;
-  font-size: 0.9rem;
-}
-
-ul.features{
-  list-style-type: none;    
-  text-align: center;
-  background: #fff;
-  color: #281A22;
-  padding:30px 22%;
-  font-size: 0.9rem;
-}
-.features li{
-  padding:15px 0;
-  width: 100%;
-}
-
-ul.features > :first-child {
-  font-size: 1rem !important;
-}
-
-.features li span{
-  padding-right: 0.4rem; 
-}
-.pt-footer{
-  padding-top: 1em;
-  font-size: 0.95rem;
-  text-transform: capitalize;
-  height: 4em !important;
-}
-
-.price {
-  text-shadow: 0px 0.14em #000;
-}
-
-.title, .hint, .pt-footer {
-  text-shadow: 0px 0.06em #000;
-}
-
-
-/*PERSONAL*/
-.personal .title{        
-  background: #40C388;    
-}
-.personal .content,.personal .pt-footer{
-  background: #82DAB2;
-}
-.personal .content:after{       
-  border-top-color: #82DAB2;    
-}
-.personal .pt-footer:after{
-  border-top-color: #FFFFFF;
-}
-/*PROFESSIONAL*/
-.professional .title{
-  background: #1BA6C0;
-}
-.professional .content,.professional .pt-footer{
-  background: #29BAD8;
-}
-.professional .content:after{   
-  border-top-color: #29BAD8;    
-}
-.professional .pt-footer:after{
-  border-top-color: #FFFFFF;
-}
-/*BUSINESS*/
-.business .title{
-  background: #CB2340;
-}
-.business .content,.business .pt-footer{
-  background: #EA2B4A;
-}
-.business .content:after{       
-  border-top-color: #EA2B4A;    
-}
-.business .pt-footer:after {    
-  border-top-color: #FFFFFF;    }
-
-.strong {
-  font-weight: bold;
-}
-
-  .stripe-button-el span {
-    font: 400 1.4em 'Droid sans', sans-serif !important;
-  }
-
-  form.two-hours-monthly .stripe-button-el,
-  form.two-hours-monthly .stripe-button-el span {
-    background-image: linear-gradient(#7DEE94,#0DA326 85%,#21B53A) !important;
-  }
-
-  form.four-hours-monthly .stripe-button-el,
-  form.four-hours-monthly .stripe-button-el span {
-    background-image: linear-gradient(#7dc5ee,#177BB5 85%,#30a2e4) !important;
-  }
-
-  form.eight-hours-monthly .stripe-button-el,
-  form.eight-hours-monthly .stripe-button-el span {
-    background-image: linear-gradient(#EE7D7D,#BA1515 85%,#E43030) !important;
-  }
-  </style>
 
   <script>
 $(document).ready(function() {
@@ -257,21 +41,35 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     })(window,document,'script','dataLayer','GTM-WKM358');</script>
     <!-- End Google Tag Manager -->
 
-
+  <div id="topNav">
     <div class="wrapper">
+      <strong class="more-info-label">More from <a href="http://rubymentor.io">RubyMentor</a>:</strong>
+      <ul class="more-info-links xs-hidden">
+        <li class="more-info"><a href="http://codementor.io/rubymentor" alt="Hourly Expert Ruby Mentorship">
+          Get Expert Help NOW</a></li>
+        <li class="more-info"><a href="http://guides.rubymentor.io" alt="HowTo guides for ruby and ruby on rails!">
+          Ruby and Ruby on Rails HOWTOS</a></li>
+        <li class="more-info"><a href="http://rubylive.tv" alt="Watch REAL Ruby get coded before your eyes!">
+          Watch Ruby coded LIVE!</a></li>
+      </ul>
+    </div>
+  </div>
+
+    <div class="wrapper container">
       <!-- PRICING-TABLE CONTAINER -->
-      <div class="pricing-table group">
+      <div class="pricing-table row">
         <!-- PERSONAL -->
-        <div class="block personal fl">
+        <div class="block personal col-md-3 col-sm-1 nopad">
           <h2 class="title">Introduction</h2>
           <!-- CONTENT -->
           <div class="content">
+            <p class="hint"><span>2 hours/mo.</span>1 on 1 Mentorship</p>
+            <hr>
             <p class="price">
             <sup>$</sup>
             <span>199</span>
             <sub>/mo.</sub>
             </p>
-            <p class="hint">2 hours personal instruction monthly</p>
           </div>
           <!-- /CONTENT -->
           <!-- FEATURES -->
@@ -301,16 +99,17 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         <!-- /PERSONAL -->
 
         <!-- PROFESSIONAL -->
-        <div class="block professional fl">
+        <div class="block professional col-md-3 col-sm-1 nopad">
           <h2 class="title">Accelerated</h2>
           <!-- CONTENT -->
           <div class="content">
+            <p class="hint"><span>4 hours/mo.</span>1 on 1 Mentorship</p>
+            <hr>
             <p class="price">
             <sup>$</sup>
             <span>349</span>
             <sub>/mo.</sub>
             </p>
-            <p class="hint">4 hours personal instruction monthly</p>
           </div>
           <!-- /CONTENT -->
           <!-- FEATURES -->
@@ -340,16 +139,17 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         <!-- /PROFESSIONAL -->
 
         <!-- BUSINESS -->
-        <div class="block business fl">
+        <div class="block business col-md-3 col-sm-1 nopad">
           <h2 class="title">Ass Kicker</h2>
           <!-- CONTENT -->
           <div class="content">
+            <p class="hint"><span>8 hours/mo.</span>1 on 1 Mentorship</p>
+            <hr>
             <p class="price">
             <sup>$</sup>
             <span>699</span>
             <sub>/mo.</sub>
             </p>
-            <p class="hint">8 hours personal instruction monthly</p>
           </div>
           <!-- /CONTENT -->
 
