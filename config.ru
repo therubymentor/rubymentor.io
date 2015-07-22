@@ -79,10 +79,10 @@ buy = ->(env) {
 }
 
 router = Rack::Router.new do
-  get "/" => index
-  get "/plans" => plans
+  get "/"         => index
+  post "/buy"     => buy
+  get "/plans"    => students
   get "/students" => students
-  post "/buy" => buy
 end
 
 run router
