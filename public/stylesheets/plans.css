@@ -1,3 +1,21 @@
+body {
+  background: #f6e77a;
+}
+
+.block h1, .block h2, .block h3 {
+  margin-top: 0px;
+}
+
+.block {
+  background: white;
+  overflow: hidden;
+  margin: 0 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;    
+}
+
+
 .pricing-table {
   font-size: 1.4em;
   text-align: center;
@@ -10,14 +28,6 @@
   text-transform: uppercase;
   font-size: 1.1em;
   margin-bottom: 4rem;
-}
-
-.block{
-  margin: 0 15px;
-  overflow: hidden;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;    
 }
 
 .title,.pt-footer{
