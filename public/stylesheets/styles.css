@@ -35,22 +35,6 @@ hr.review-section-header-underline {
   z-index: 10;
 }
 
-.review-name-lg {
-  font-family: 'Droid Serif', serif;
-  font-size: 2.5em;
-  margin-bottom: 0.8em;
-  margin-top: 1em;
-}
-
-.review-text {
-  font: 100 1em 'Open Sans', sans-serif;
-  margin: 1.2em 0;
-}
-
-.review-image-lg {
-  margin: -1em 1em -1em 1em;
-}
-
 
 .form-control {
   border-radius: 0;
@@ -375,6 +359,35 @@ form.bootcamp-enroll input[type=submit]
 /*----------------------------
 08. REVIEWS
 ----------------------------*/
+.review-callout {
+  position: relative;
+  float: left;
+  width: 30%;
+  margin: 0.5em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.review-callout-name {
+  margin-top: 1.4em;
+}
+
+.review-name-lg {
+  font-family: 'Droid Serif', serif;
+  font-size: 2.5em;
+  margin-bottom: 0.8em;
+  margin-top: 1em;
+}
+
+.review-text {
+  font: 100 1em 'Open Sans', sans-serif;
+  margin: 1.2em 0;
+}
+
+.review-image-lg {
+  margin: -1em 1em -1em 1em;
+}
+
 #reviews {
   background: #fff;
   position: relative;
@@ -505,15 +518,3 @@ form.bootcamp-enroll input[type=submit]
   margin-left: -33px;
 }
 
-.review-callout {
-  position: relative;
-  float: left;
-  width: 30%;
-  margin: 0.5em;
-margin-bottom: 2em;
-  text-align: center;
-}
-
-.review-callout-name {
-  margin-top: 1.4em;
-}
